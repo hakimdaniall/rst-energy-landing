@@ -1,0 +1,79 @@
+/*-----------------------------------------------------------------------------
+  $ Starters
+/*-----------------------------------------------------------------------------
+  Just some simple standardisation.
+-----------------------------------------------------------------------------*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  transition: none $transition-duration $transition-easing;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font: 100%/1.2 $ff-base;
+}
+
+html {
+  background-color: $dark-white;
+  color: $black;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: 1.25em/1.1 $ff-alpha;
+}
+
+a,
+button,
+input {
+  transition-property: color, border-color, background-color, opacity;
+}
+
+a {
+  outline: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  appearance: none;
+}
+
+img {
+  max-width: 100%;
+}

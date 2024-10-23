@@ -1,0 +1,26 @@
+/*-----------------------------------------------------------------------------
+    WEBSITE-NAME
+-----------------------------------------------------------------------------*/
+
+/*---- Imports ----*/
+
+@import 'imports/normalize';
+
+/*---- Globals ----*/
+
+@import 'globals/functions';
+@import 'globals/mixins';
+@import 'globals/vars';
+@import 'globals/default';
+
+/*---- Low Priority Components ----*/
+
+@import 'components/fonts';
+@import 'components/starters';
+
+/*---- Components ----*/
+
+@import 'components/buttons';
+@import 'components/site-footer';
+@import 'components/site-header';
+@import 'components/wrappers';
