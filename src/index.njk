@@ -9,11 +9,13 @@
         <p>Your Engineering Solution Powerhouse</p>
         <div class="d-flex">
           <a href="#about" class="btn-get-started">Get Started</a>
-          {# <a
+          {#
+          <a
             href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
             class="glightbox btn-watch-video d-flex align-items-center"
             ><i class="bi bi-play-circle"></i><span>Watch Video</span></a
-          > #}
+          >
+          #}
         </div>
       </div>
     </div>
@@ -31,7 +33,11 @@
   <div class="container">
     <div class="row gy-3">
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <img src="{{rootPath}}assets/images/about.jpg" alt="" class="img-fluid" />
+        <img
+          src="{{rootPath}}assets/images/about.jpg"
+          alt=""
+          class="img-fluid"
+        />
       </div>
 
       <div
@@ -40,19 +46,31 @@
         data-aos-delay="200"
       >
         <div class="about-content ps-0 ps-lg-3">
-          <h3>
-            Executive Summary
-          </h3>
+          <h3>Executive Summary</h3>
           <p class="mt-4 text-justify">
-            RST Energy Sdn Bhd is an engineering solutions powerhouse, incorporated in 2024, with a vision to be a leader in the oil and gas industry. The company provides a range of services, including plant maintenance, manpower services, anti-corrosion coatings, fabrication, and pipeline construction. Our team of professionals brings expertise in engineering, procurement, construction, and commissioning (EPCC), ensuring efficient and safe execution of projects. This proposal outlines RST Energy’s ability to deliver tailored engineering solutions that meet the operational needs of oil and gas clients, ensuring regulatory compliance and cost-effective execution.
+            RST Energy Sdn Bhd is an engineering solutions powerhouse,
+            incorporated in 2024, with a vision to be a leader in the oil and
+            gas industry. The company provides a range of services, including
+            plant maintenance, manpower services, anti-corrosion coatings,
+            fabrication, and pipeline construction. Our team of professionals
+            brings expertise in engineering, procurement, construction, and
+            commissioning (EPCC), ensuring efficient and safe execution of
+            projects. This proposal outlines RST Energy’s ability to deliver
+            tailored engineering solutions that meet the operational needs of
+            oil and gas clients, ensuring regulatory compliance and
+            cost-effective execution.
           </p>
         </div>
         <div class="mt-4 about-content ps-0 ps-lg-3">
-          <h3>
-           Value Proposition
-          </h3>
+          <h3>Value Proposition</h3>
           <p class="mt-4 text-justify">
-            RST Energy’s unique value lies in our ability to offer end-to-end engineering services with a focus on safety, innovation, and cost efficiency. Our multidisciplinary team ensures that every project is handled by industry experts, minimizing operational risks and downtime. With strong local knowledge and a commitment to utilizing the latest technology, RST Energy delivers reliable, sustainable, and compliant engineering solutions to our clients.
+            RST Energy’s unique value lies in our ability to offer end-to-end
+            engineering services with a focus on safety, innovation, and cost
+            efficiency. Our multidisciplinary team ensures that every project is
+            handled by industry experts, minimizing operational risks and
+            downtime. With strong local knowledge and a commitment to utilizing
+            the latest technology, RST Energy delivers reliable, sustainable,
+            and compliant engineering solutions to our clients.
           </p>
         </div>
       </div>
@@ -60,12 +78,10 @@
   </div>
 </section>
 
-<section id="featured-services" class="featured-services section light-background">
+<section id="philosophy" class="featured-services section light-background">
   <div class="container section-title" data-aos="fade-up">
     <h2>Our Values</h2>
-    <p>
-      <span>Our</span> <span class="description-title">Philosophy</span>
-    </p>
+    <p><span>Our</span> <span class="description-title">Philosophy</span></p>
   </div>
   <div class="container">
     <div class="row gy-4">
@@ -77,7 +93,7 @@
       >
         <div class="service-item position-relative">
           <div class="icon"><i class="{{ item.icon }}"></i></div>
-          <h4><a href="" class="stretched-link">{{ item.title }}</a></h4>
+          <h4><a class="stretched-link">{{ item.title }}</a></h4>
           <p>{{ item.description }}</p>
         </div>
       </div>
@@ -99,9 +115,10 @@
       <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="service-item position-relative">
           <div class="icon">
-            <i class="bi bi-eye"></i> <!-- Eye icon for Vision -->
+            <i class="bi bi-eye"></i>
+            <!-- Eye icon for Vision -->
           </div>
-          <a href="#" class="stretched-link">
+          <a class="stretched-link">
             <h3>Vision</h3>
           </a>
           <p>Leading Engineering Solutions Powerhouse</p>
@@ -111,47 +128,56 @@
       <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="service-item position-relative">
           <div class="icon">
-            <i class="bi bi-flag"></i> <!-- Flag icon for Mission -->
+            <i class="bi bi-flag"></i>
+            <!-- Flag icon for Mission -->
           </div>
-          <a href="#" class="stretched-link">
+          <a class="stretched-link">
             <h3>Mission</h3>
           </a>
           <ul class="mt-4 text-justify vision-mission-list">
-            <li>Committed to pursuing excellent engineering expertise and service maintenance.</li>
-            <li>We lead the industry in safety and environmentally friendly execution of projects.</li>
-            <li>We engage the best professionals in their field of expertise.</li>
+            <li>
+              Committed to pursuing excellent engineering expertise and service
+              maintenance.
+            </li>
+            <li>
+              We lead the industry in safety and environmentally friendly
+              execution of projects.
+            </li>
+            <li>
+              We engage the best professionals in their field of expertise.
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-
 </section>
 
-<section id="services" class="services section light-background">
+<section id="scope-of-work" class="services section light-background">
   <div class="container section-title" data-aos="fade-up">
     <h2>Services</h2>
-    <p>
-      <span>Scope Of</span> <span class="description-title">Work</span>
-    </p>
+    <p><span>Scope Of</span> <span class="description-title">Work</span></p>
   </div>
 
   <div class="container">
     <div class="row gy-4 justify-content-center">
       {% for item in scope_of_work %}
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ item.data_aos_delay }}">
+      <div
+        class="col-lg-4 col-md-6"
+        data-aos="fade-up"
+        data-aos-delay="{{ item.data_aos_delay }}"
+      >
         <div class="service-item position-relative">
           <div class="icon">
             <i class="{{ item.icon }}"></i>
           </div>
-          <a href="#" class="stretched-link">
+          <a class="stretched-link">
             <h3>{{ item.title }}</h3>
           </a>
           <p>{{ item.desc }}</p>
         </div>
       </div>
       {% endfor %}
-
     </div>
   </div>
 </section>
@@ -201,212 +227,17 @@
       <div class="swiper-wrapper align-items-center">
         {% for item in potential_client %}
         <div class="swiper-slide">
-          <img src="{{rootPath}}assets/images/clients/{{item.src}}" class="img-fluid client-logo" alt="" />
+          <img
+            src="{{rootPath}}assets/images/clients/{{item.src}}"
+            class="img-fluid client-logo"
+            alt=""
+          />
         </div>
         {% endfor %}
       </div>
     </div>
   </div>
 </section>
-
-{# <section id="team" class="team section light-background">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Team</h2>
-    <p>
-      <span>Our Hardworking</span> <span class="description-title">Team</span>
-    </p>
-  </div>
-
-  <div class="container">
-    <div class="row gy-4">
-      <div
-        class="col-lg-3 col-md-6 d-flex align-items-stretch"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
-        <div class="team-member">
-          <div class="member-img">
-            <img src="{{rootPath}}assets/images/team/team-1.jpg" class="img-fluid" alt="" />
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="col-lg-3 col-md-6 d-flex align-items-stretch"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <div class="team-member">
-          <div class="member-img">
-            <img src="{{rootPath}}assets/images/team/team-2.jpg" class="img-fluid" alt="" />
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>Sarah Jhonson</h4>
-            <span>Product Manager</span>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="col-lg-3 col-md-6 d-flex align-items-stretch"
-        data-aos="fade-up"
-        data-aos-delay="300"
-      >
-        <div class="team-member">
-          <div class="member-img">
-            <img src="{{rootPath}}assets/images/team/team-3.jpg" class="img-fluid" alt="" />
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="col-lg-3 col-md-6 d-flex align-items-stretch"
-        data-aos="fade-up"
-        data-aos-delay="400"
-      >
-        <div class="team-member">
-          <div class="member-img">
-            <img src="{{rootPath}}assets/images/team/team-4.jpg" class="img-fluid" alt="" />
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="faq" class="faq section light-background">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>F.A.Q</h2>
-    <p>
-      <span>Frequently Asked</span>
-      <span class="description-title">Questions</span>
-    </p>
-  </div>
-
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-        <div class="faq-container">
-          <div class="faq-item faq-active">
-            <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-            <div class="faq-content">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
-                volutpat lacus laoreet non curabitur gravida. Venenatis lectus
-                magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-
-          <div class="faq-item">
-            <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
-            <div class="faq-content">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant
-                morbi. Id interdum velit laoreet id donec ultrices. Fringilla
-                phasellus faucibus scelerisque eleifend donec pretium. Est
-                pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-
-          <div class="faq-item">
-            <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-            <div class="faq-content">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                sagittis orci. Faucibus pulvinar elementum integer enim. Sem
-                nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
-                pellentesque eu tincidunt. Lectus urna duis convallis convallis
-                tellus. Urna molestie at elementum eu facilisis sed odio morbi
-                quis
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-
-          <div class="faq-item">
-            <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-            <div class="faq-content">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant
-                morbi. Id interdum velit laoreet id donec ultrices. Fringilla
-                phasellus faucibus scelerisque eleifend donec pretium. Est
-                pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-
-          <div class="faq-item">
-            <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
-            <div class="faq-content">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo.
-                Dignissim suspendisse in est ante in. Nunc vel risus commodo
-                viverra maecenas accumsan. Sit amet nisl suscipit adipiscing
-                bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-
-          <div class="faq-item">
-            <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-            <div class="faq-content">
-              <p>
-                Enim ea facilis quaerat voluptas quidem et dolorem. Quis et
-                consequatur non sed in suscipit sequi. Distinctio ipsam dolore
-                et.
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> #}
 
 <section id="contact" class="contact section light-background">
   <div class="container section-title" data-aos="fade-up">
@@ -425,10 +256,8 @@
             <div>
               <h3>Address</h3>
               <p>
-                11-A,
-                Jalan Tengku Ampuan Zabedah J 9/J Seksyen 9,
-                40100, Shah Alam
-                Selangor, Malaysia
+                11-A, Jalan Tengku Ampuan Zabedah J 9/J Seksyen 9, 40100, Shah
+                Alam Selangor, Malaysia
               </p>
             </div>
           </div>
@@ -449,19 +278,20 @@
             </div>
           </div>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5773.745496965095!2d101.52395607636433!3d3.083994353546823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4d87dc9022ff%3A0x59644c7f57aa2359!2s11a%2C%20Jalan%20Tengku%20Ampuan%20Zabedah%20J%209%2FJ%2C%20Seksyen%209%2C%2040100%20Shah%20Alam%2C%20Selangor!5e1!3m2!1sen!2smy!4v1729697388022!5m2!1sen!2smy" 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5773.745496965095!2d101.52395607636433!3d3.083994353546823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4d87dc9022ff%3A0x59644c7f57aa2359!2s11a%2C%20Jalan%20Tengku%20Ampuan%20Zabedah%20J%209%2FJ%2C%20Seksyen%209%2C%2040100%20Shah%20Alam%2C%20Selangor!5e1!3m2!1sen!2smy!4v1729697388022!5m2!1sen!2smy"
             style="border:0; width: 100%; height: 270px;"
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>         
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
         </div>
       </div>
 
       <div class="col-lg-7">
         <form
-          action="forms/contact.php"
-          method="post"
+          id="contact-form"
           class="php-email-form"
           data-aos="fade-up"
           data-aos-delay="200"
@@ -474,7 +304,7 @@
                 name="name"
                 id="name-field"
                 class="form-control"
-                required=""
+                required
               />
             </div>
 
@@ -485,7 +315,7 @@
                 class="form-control"
                 name="email"
                 id="email-field"
-                required=""
+                required
               />
             </div>
 
@@ -496,7 +326,7 @@
                 class="form-control"
                 name="subject"
                 id="subject-field"
-                required=""
+                required
               />
             </div>
 
@@ -507,7 +337,7 @@
                 name="message"
                 rows="10"
                 id="message-field"
-                required=""
+                required
               ></textarea>
             </div>
 
