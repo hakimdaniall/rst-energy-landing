@@ -1,0 +1,219 @@
+<section id="qcfeatures" class="qcfeatures section light-background">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Services</h2>
+      <p>
+        We provide specialized services for industries such as oil, gas, power,
+        and construction.
+      </p>
+    </div>
+  
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 d-flex align-items-center">
+          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+            {% for service in services %}
+            <li class="nav-item">
+              <a
+                class="nav-link {% if loop.index == 1 %}active show{% endif %}"
+                data-bs-toggle="tab"
+                data-bs-target="#qcfeatures-tab-{{ loop.index }}"
+              >
+                <i class="{{service.icon}}"></i>
+                <div>
+                  <h4 class="d-none d-lg-block">{{ service.title }}</h4>
+                  <p>{{ service.desc }}</p>
+                </div>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+  
+        <div class="col-lg-6">
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+            {% for service in services %}
+            <div
+              class="tab-pane fade {% if loop.index == 1 %}active show{% endif %}"
+              id="qcfeatures-tab-{{ loop.index }}"
+            >
+              <img
+                src="{{rootPath}}assets/images/services/{{ service.img }}"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="qcfeatures-details" class="qcfeatures-details section">
+    <div class="container">
+      {% for service in anti_corrosion_services %}
+      <div class="row gy-4 justify-content-between qcfeatures-item">
+        {% if loop.index is odd %}
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="qc-img-wrapper">
+            <img
+              src="{{rootPath}}assets/images/services/{{ service.img }}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+  
+        <div
+          class="col-lg-5 d-flex align-items-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="content">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.desc }}</p>
+          </div>
+        </div>
+        {% else %}
+        <div
+          class="col-lg-5 d-flex align-items-center order-2 order-lg-1"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="content">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.desc }}</p>
+          </div>
+        </div>
+  
+        <div
+          class="col-lg-6 order-1 order-lg-2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="qc-img-wrapper">
+            <img
+              src="{{rootPath}}assets/images/services/{{ service.img }}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  
+  <section id="more-features" class="more-features section light-background">
+    <div class="container">
+      <div class="row justify-content-around gy-4">
+        <div
+          class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <h3>Industrial Cleaning Services</h3>
+          <p class="text-justify">
+            Dedicated to delivering our clients fast, cost-effective, and
+            environmentally friendly industrial cleaning solutions catered to
+            their specific cleaning challenges. Industrial, manufacturing, and
+            maritime facilities are subjected to rigorous operating conditions and
+            often require regular maintenance and cleaning in order to ensure
+            maximum production efficiency and adherence to environment, health,
+            and safety standards.
+          </p>
+  
+          <div class="row">
+            {% for item in industrial_cleaning_services %}
+            <div class="col-lg-12 icon-box d-flex">
+              <i class="{{ item.icon }} flex-shrink-0"></i>
+              <div>
+                <h4>{{ item.title }}</h4>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+  
+        <div
+          class="features-image col-lg-5 order-1 order-lg-2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img src="{{ rootPath }}assets/images/services/cleaning.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="qcservices" class="qcservices section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Services</h2>
+      <p>Civil & Structure Work</p>
+    </div>
+  
+    <div class="container">
+      <div class="row g-5 justify-content-center">
+        {% for item in civil_structure_work %}
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="qcservice-item item-{{item.color}} position-relative">
+            <i class="{{item.icon}} icon"></i>
+            <div>
+              <h3>{{ item.title }}</h3>
+              <p class="mt-2">{{ item.desc }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+  <section id="about" class="about section light-background">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Services</h2>
+      <p>
+        <span>Engineering </span>
+        <span class="description-title">Procurement</span>
+      </p>
+    </div>
+  
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <img
+            src="{{rootPath}}assets/images/services/pipeline.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+  
+        <div
+          class="col-lg-6 d-flex flex-column justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="about-content ps-0 ps-lg-3">
+            <h3>Engineering Procurement Construction & Commissioning</h3>
+            <p class="mt-4 text-justify">
+              We provide EPCC for onshore gas and oil pipelines for commercial,
+              industrial, and plant applications. We offer the required range of
+              engineering design disciplines to support onshore pipeline design,
+              including process, piping, mechanical, civil construction,
+              materials, safety, environmental, instruments, communications, and
+              installation. We are familiar with the various international design
+              codes and our obligations to apply best industry practices. Our
+              onshore pipeline design engineers fully understand that a successful
+              pipeline design must consider the entire production system, the
+              fluid chemistry, and environmental conditions. Safety, operational
+              risks, and economics are of prime importance in designing a
+              fit-for-purpose pipeline system that can be operated safely and
+              effectively throughout its operational life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
