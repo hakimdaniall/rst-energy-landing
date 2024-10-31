@@ -28,7 +28,7 @@
   </div>
 </section>
 
-<section class="infos section" style="background-color: #0A427D;">
+<section class="infos section" style="background-color: #09417D;">
   <div class="container">
       <div class="row">
           <div class="col-lg-7">
@@ -49,7 +49,7 @@
           <div class="col-lg-5 mb-4 mb-lg-0">
               <div class="text-center text-lg-start row">
                   <h1><span class="dark-green-text">Vision.</span></h1>
-                  <h1 class="display-5 fw-bolders info-text mt-4">Leading Engineering Solution Powerhouse by <span class="dark-green-text">2027.</span></h1>
+                  <h5 class="display-5 fw-bolders info-text mt-4">Leading Engineering Solution Powerhouse by <span class="dark-green-text">2027.</span></h5>
               </div>
           </div>
 
@@ -218,7 +218,41 @@
   </div>
 </section> #}
 
-<section id="clients" class="clients section light-background">
+
+<section id="our-services" class="our-services section">
+  <div class="container">
+    <div class="row gy-3">
+      <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+        <img
+          src="{{rootPath}}assets/images/about.jpg"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+
+      <div
+        class="col-lg-7 d-flex flex-column justify-content-center"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="about-content ps-0 ps-lg-3">
+          <div class="services-list">
+            <h3>Our Services</h3>
+            <ul>
+              {% for item in our_services %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+
+          <a class="our-services-btn" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="clients" class="clients section">
   <div class="container section-title" data-aos="fade-up">
     <p>Client</p>
   </div>
@@ -272,38 +306,6 @@
   </div>
 </section>
 
-<section id="our-services" class="our-services section">
-  <div class="container">
-    <div class="row gy-3">
-      <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-        <img
-          src="{{rootPath}}assets/images/about.jpg"
-          alt=""
-          class="img-fluid"
-        />
-      </div>
-
-      <div
-        class="col-lg-7 d-flex flex-column justify-content-center"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <div class="about-content ps-0 ps-lg-3">
-          <div class="services-list">
-            <h3>Our Services</h3>
-            <ul>
-              {% for item in our_services %}
-              <li>{{ item }}</li>
-              {% endfor %}
-            </ul>
-          </div>
-
-          <a class="our-services-btn" href="#">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 {# <section id="contact" class="contact section light-background">
   <div class="container section-title" data-aos="fade-up">

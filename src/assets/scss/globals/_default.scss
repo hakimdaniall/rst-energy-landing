@@ -12,8 +12,8 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-    --default-font: "League Spartan", sans-serif;    ;
-    --heading-font: "Montserrat",  sans-serif;
+    --default-font: "League Spartan", sans-serif;
+    --heading-font: "League Spartan",  sans-serif;
     --nav-font: "Open Sans",  sans-serif;
   }
   
@@ -72,10 +72,10 @@
     transition: 0.3s;
   }
   
-  a:hover {
-    color: color-mix(in srgb, var(--accent-color), transparent 25%);
-    text-decoration: none;
-  }
+  // a:hover {
+  //   color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  //   text-decoration: none;
+  // }
   
   h1,
   h2,
@@ -746,6 +746,10 @@
     .sticky-bar h5, 
     .sticky-bar a {
       font-size: 12px;
+    }
+
+    .info-text {
+      font-size: 48px !important;
     }
   }
   
@@ -2081,7 +2085,9 @@
   }
 
   .info-text {
-    color: #abcded;
+    color: #fff;
+    font-size: 70px;
+    line-height: 1;
   }
 
   .col-separator {
