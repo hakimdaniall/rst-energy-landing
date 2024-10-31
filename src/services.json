@@ -1,20 +1,62 @@
 {
     "services": [
         {
-            "title": "Plant Maintenance & Turnaround Services",
-            "desc": "Latest techniques of IMR to ensure our client's assets are running successfully and economically. The oil, gas, and energy industries are asset-intensive. Given the current economic climate, volatile energy prices, and customer demands, executives in these industries must make rapid and difficult business and operational decisions. To remain economical, asset-owners are looking for new ways to get the most out of their assets, assure their assets stay online, and plan for unexpected failures.",
+            "title": "Plant Maintenance & Turnaround ",
+            "desc": "Our Plant Maintenance and Turnaround Services are designed to ensure that industrial facilities operate at peak efficiency, with minimal disruptions and maximum safety. These services are essential for sustaining long-term operational excellence and supporting the strategic goals of our clients.",
             "img": "plant.jpg",
             "icon": "bi bi-box-seam"
         },
         {
-            "title": "Manpower Services",
-            "desc": "Supplied experienced and qualified manpower to various oil and gas, power, construction, and other industries. In reach with this, our engineers and technicians are qualified and have a wide scope in their respective fields. Thus, this will allow us to mobilize the right candidate at the right job, upon client’s immediate request.",
+            "title": "Manpower Supply & General Trading",
+            "desc": "Dual-service approach enhances operational efficiency and supports businesse. By offering a skilled workforce and efficient procurement of goods, we help clients enhance productivity, reduce costs, and achieve their project objectives effectively.",
             "img": "manpower.jpg",
             "icon": "bi bi-person-badge" 
         },
         {
-            "title": "Rental Solution",
-            "desc": "At Rental Solution, we strive to have the best and broadest selection of premium rental equipment available and ready when our customers need it. We provide equipment/tools solutions for oil and gas, construction, and all other industries.",
+            "title": "Blasting and Painting",
+            "desc": "Blasting and painting services are essential for the protection and longevity of industrial structures and equipment. Our skilled teams utilize advanced techniques and high-quality materials to deliver superior results, ensuring client satisfaction and operational excellence.",
+            "img": "equipment.jpg",
+            "icon": "bi bi-tools" 
+        },
+        {
+            "title": "Steel Structural Fabrication and Erection",
+            "desc": "We provide comprehensive solutions for constructing robust and reliable steel structures. Our experienced teams utilize advanced techniques and adhere to the highest standards of quality and safety, ensuring successful project outcomes that meet the needs of our clients.",
+            "img": "equipment.jpg",
+            "icon": "bi bi-tools" 
+        },
+        {
+            "title": "Industrial Cleaning Services",
+            "desc": "Industrial cleaning services for pressure vessels, tank, heat exchangers & etc are critical for maintaining operational efficiency, ensuring safety, and extending the lifespan of equipment. Our skilled teams utilize advanced cleaning techniques and adhere to strict safety and environmental standards",
+            "img": "equipment.jpg",
+            "icon": "bi bi-tools",
+            "industrial_cleaning_services": [
+                {
+                    "title": "Internal & External Bundle Cleaning Machines",
+                    "icon": "bi bi-tools"
+                },
+                {
+                    "title": "Ultra High Pressure Water Jetting",
+                    "icon": "bi bi-water"
+                },
+                {
+                    "title": "Dry Ice Blasting + Glass Beads",
+                    "icon": "bi bi-snow"
+                },
+                {
+                    "title": "Roto Car",
+                    "icon": "bi bi-car-front"
+                }
+            ]
+        },
+        {
+            "title": "Engineering Procurement Construction & Commissioning",
+            "desc": "Our services provide a holistic approach to project delivery, integrating engineering, procurement, construction, and commissioning into a cohesive process. Our commitment to quality, safety, and client satisfaction ensures successful project outcomes and operational excellence.",
+            "img": "equipment.jpg",
+            "icon": "bi bi-tools" 
+        },
+        {
+            "title": "Civil & Mechanical Construction",
+            "desc": "Our services encompass a wide range of activities, from site preparation and structural engineering to the installation of mechanical systems, ensuring that projects are completed efficiently and to the highest standards.",
             "img": "equipment.jpg",
             "icon": "bi bi-tools" 
         }

@@ -3,7 +3,8 @@
     color: #000;
 }
 
-.about h1 {
+.about h1,
+.service-items-heading {
     font-size: 24px;
     font-weight: bold;
 }
@@ -31,11 +32,12 @@
     .about {
         padding: 60px 0;
     }
-    .about h1 {
+    .about h1,
+    .service-items-heading {
         font-size: 36px;
     }
     .about-desc {
-        font-size: 24px;
+        font-size: 20px;
     }
     .vnm {
         padding-top: 32px;
@@ -47,6 +49,6 @@
         font-size: 70px;
     }
     .mission {
-        font-size: 24px;
+        font-size: 20px;
     }
 }

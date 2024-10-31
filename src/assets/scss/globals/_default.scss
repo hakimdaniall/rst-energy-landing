@@ -2114,7 +2114,9 @@
   // }
 
   .page-title-services {
-    background: url(https://www.fumiko.com.my/public/banner/images/services-banner-01.webp);
+    background: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 460px;
     display: flex;
     justify-content: center;
@@ -2124,5 +2126,11 @@
   }
   .page-title-services h1 {
     color: #fff;
+    font-size: 32px;
+  }
+
+@media (min-width: 992px) {
+  .page-title-services h1 {
     font-size: 70px;
   }
+}
