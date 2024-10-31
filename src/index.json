@@ -9,28 +9,28 @@
   ],
   "our_philosophy": [
     {
-      "icon": "bi bi-person-badge", 
-      "title": "Leadership with Integrity",
-      "description": "We develop each team member by fostering leadership within our company, providing individual expertise, professional service, and a unique perspective on every project or task they undertake. We always do the right thing with the highest ethical standards of integrity, earning the trust of our strategic business partners, clients, and society.",
-      "data_aos_delay": 100
-    },
-    {
-      "icon": "bi bi-lightbulb", 
-      "title": "Enterprising",
-      "description": "As a market leader, we set our own standards and carve out our niche. We focus on the latest state-of-the-art technology, allowing us to stay at the forefront of the industry.",
-      "data_aos_delay": 200
-    },
-    {
       "icon": "bi bi-speedometer", 
       "title": "Agile and Innovative",
-      "description": "We lead the market by setting our own standards and establishing our niche. Our emphasis on cutting-edge technology keeps us at the industry's forefront.",
+      "description": "Dynamic environments, driving growth.",
       "data_aos_delay": 300
+    },
+    {
+      "icon": "bi bi-person-badge", 
+      "title": "Integrity Leadership",
+      "description": "Organizational goals with ethical  practices.",
+      "data_aos_delay": 100
     },
     {
       "icon": "bi bi-people", 
       "title": "People-Focused",
-      "description": "We are a people-centric organization, committed to fostering a culture of learning and proficiency. This helps our team become more resilient, with enhanced knowledge, skills, and abilities.",
+      "description": "Fostering a positive culture, enhances engagement.",
       "data_aos_delay": 400
+    },
+    {
+      "icon": "bi bi-lightbulb", 
+      "title": "Enterprising",
+      "description": "Creative problem-solving & strategic thinking.",
+      "data_aos_delay": 200
     }
   ],
   "scope_of_work": [
