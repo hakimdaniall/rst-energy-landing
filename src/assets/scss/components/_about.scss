@@ -1,0 +1,52 @@
+.about {
+    padding: 40px 0;
+    color: #000;
+}
+
+.about h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-desc {
+
+}
+.vnm {
+    padding-top: 1.5rem;
+}
+.vnm-heading {
+    font-size: 32px;
+    font-weight: 600;
+}
+.vision {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 800;
+}
+.mission {
+
+}
+
+@media (min-width: 992px) {
+    .about {
+        padding: 60px 0;
+    }
+    .about h1 {
+        font-size: 36px;
+    }
+    .about-desc {
+        font-size: 24px;
+    }
+    .vnm {
+        padding-top: 32px;
+    }
+    .vnm-heading {
+        font-size: 40px;
+    }
+    .vision {
+        font-size: 70px;
+    }
+    .mission {
+        font-size: 24px;
+    }
+}
