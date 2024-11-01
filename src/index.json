@@ -33,38 +33,6 @@
       "data_aos_delay": 200
     }
   ],
-  "scope_of_work": [
-    {
-      "title": "Piping",
-      "icon": "bi bi-gear",
-      "desc": "Design, fabrication, and installation of onshore oil and gas pipelines. We ensure materials meet ASME standards and consider safety and environmental conditions.",
-      "data_aos_delay": 100
-    },
-    {
-      "title": "Fabrication",
-      "icon": "bi bi-wrench",
-      "desc": "Structural fabrication services, including steel structures and pressure vessels for industrial applications.",
-      "data_aos_delay": 200
-    },
-    {
-      "title": "Steel Structure",
-      "icon": "bi bi-building",
-      "desc": "Construction and installation of steel frames for oil and gas facilities, ensuring compliance with international standards.",
-      "data_aos_delay": 300
-    },
-    {
-      "title": "Civil Work",
-      "icon": "bi bi-cone-striped",
-      "desc": "Earthworks, demolition, and site preparation, along with concrete foundations, pipe supports, and drainage systems. We also provide building services for sub-stations and storage facilities.",
-      "data_aos_delay": 400
-    },
-    {
-      "title": "Other Services",
-      "icon": "bi bi-tools",
-      "desc": "Anti-corrosion coatings, industrial cleaning, and manpower supply.",
-      "data_aos_delay": 500
-    }
-  ],
   "potential_client": [
     {
       "src": "exxonmobil.png"
