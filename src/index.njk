@@ -6,18 +6,21 @@
         data-aos="zoom-out"
       >
         <p>MALAYSIAN INCORPORATED COMPANY</p>
-        <h1>Specialized in Engineering & Maintenance Services For Oil & Gas, Energy, Maritime & General Industries</h1>
+        <h1>
+          Specialized in Engineering & Maintenance Services For Oil & Gas,
+          Energy, Maritime & General Industries
+        </h1>
         <div class="d-flex">
-          <a href="about.html" class="btn-get-started mt-4">About Us</a>          
+          <a href="about.html" class="btn-get-started mt-4">About Us</a>
         </div>
       </div>
       <div
         class="col-lg-5 order-1 order-lg-2 d-flex flex-column justify-content-center mt-0"
         data-aos="zoom-out"
       >
-      <div class="hero-img d-none d-lg-block">
-        <img src="{{ rootPath }}assets/images/hero-img-squared.jpeg" alt="">
-      </div>
+        <div class="hero-img d-none d-lg-block">
+          <img src="{{ rootPath }}assets/images/hero-img-squared.jpeg" alt="" />
+        </div>
       </div>
     </div>
   </div>
@@ -25,194 +28,43 @@
 
 <section class="infos section" style="background-color: #09417D;">
   <div class="container">
-      <div class="row">
-          <div class="col-lg-7">
-            <h1 class="text-center text-lg-start">Our <span class="dark-green-text">Philosophy.</span></h1>
-            <div class="row mt-4 mx-lg-4">
-              {% for item in our_philosophy %}
-                <div class="d-flex align-items-center mb-4">
-                    {# <img src="{{ item.img }}" width="84" height="84" alt="{{ item.alt }}"> #}
-                    <div class="info-icon rounded"><i class="{{ item.icon }}"></i></div>
-                    <div class="flex-column mx-4">
-                      <h3 class="fw-bold text-white mb-2">{{ item.title }}</h3>
-                      <p class="info-desc text-lg-start">{{ item.description }}</p>
-                    </div>
-                </div>
-              {% endfor %}
+    <div class="row">
+      <div class="col-lg-7">
+        <h1 class="text-center text-lg-start">
+          Our <span class="dark-green-text">Philosophy.</span>
+        </h1>
+        <div class="row mt-4 mx-lg-4">
+          {% for item in our_philosophy %}
+          <div class="d-flex align-items-center mb-4">
+            {#
+            <img
+              src="{{ item.img }}"
+              width="84"
+              height="84"
+              alt="{{ item.alt }}"
+            />
+            #}
+            <div class="info-icon rounded"><i class="{{ item.icon }}"></i></div>
+            <div class="flex-column mx-4">
+              <h3 class="fw-bold text-white mb-2">{{ item.title }}</h3>
+              <p class="info-desc text-lg-start">{{ item.description }}</p>
             </div>
           </div>
-          <div class="col-lg-5 mb-4 mb-lg-0">
-              <div class="text-center text-lg-start row">
-                  <h1><span class="dark-green-text">Vision.</span></h1>
-                  <h5 class="display-5 fw-bolders info-text mt-4">Leading Engineering Solution Powerhouse by <span class="dark-green-text">2027.</span></h5>
-              </div>
-          </div>
-
+          {% endfor %}
+        </div>
       </div>
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <div class="text-center text-lg-start row">
+          <h1><span class="dark-green-text">Vision.</span></h1>
+          <h5 class="display-5 fw-bolders info-text mt-4">
+            Leading Engineering Solution Powerhouse by
+            <span class="dark-green-text">2027.</span>
+          </h5>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-
-
-{# <section id="about" class="about section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>About</h2>
-    <p>
-      <span>Find Out More</span> <span class="description-title">About Us</span>
-    </p>
-  </div>
-
-  <div class="container">
-    <div class="row gy-3">
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <img
-          src="{{rootPath}}assets/images/about.jpg"
-          alt=""
-          class="img-fluid"
-        />
-      </div>
-
-      <div
-        class="col-lg-6 d-flex flex-column justify-content-center"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <div class="about-content ps-0 ps-lg-3">
-          <h3>Executive Summary</h3>
-          <p class="mt-4 text-justify">
-            RST Energy Sdn Bhd is an engineering solutions powerhouse,
-            incorporated in 2024, with a vision to be a leader in the oil and
-            gas industry. The company provides a range of services, including
-            plant maintenance, manpower services, anti-corrosion coatings,
-            fabrication, and pipeline construction. Our team of professionals
-            brings expertise in engineering, procurement, construction, and
-            commissioning (EPCC), ensuring efficient and safe execution of
-            projects. This proposal outlines RST Energy’s ability to deliver
-            tailored engineering solutions that meet the operational needs of
-            oil and gas clients, ensuring regulatory compliance and
-            cost-effective execution.
-          </p>
-        </div>
-        <div class="mt-4 about-content ps-0 ps-lg-3">
-          <h3>Value Proposition</h3>
-          <p class="mt-4 text-justify">
-            RST Energy’s unique value lies in our ability to offer end-to-end
-            engineering services with a focus on safety, innovation, and cost
-            efficiency. Our multidisciplinary team ensures that every project is
-            handled by industry experts, minimizing operational risks and
-            downtime. With strong local knowledge and a commitment to utilizing
-            the latest technology, RST Energy delivers reliable, sustainable,
-            and compliant engineering solutions to our clients.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> #}
-
-{# <section id="philosophy" class="featured-services section light-background">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Our Values</h2>
-    <p><span>Our</span> <span class="description-title">Philosophy</span></p>
-  </div>
-  <div class="container">
-    <div class="row gy-4">
-      {% for item in our_philosophy %}
-      <div
-        class="col-xl-3 col-md-6 d-flex"
-        data-aos="fade-up"
-        data-aos-delay="{{ item.data_aos_delay }}"
-      >
-        <div class="service-item position-relative">
-          <div class="icon"><i class="{{ item.icon }}"></i></div>
-          <h4><a class="stretched-link">{{ item.title }}</a></h4>
-          <p>{{ item.description }}</p>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section> #}
-
-{# <section id="vision-mission" class="services section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Our Purpose</h2>
-    <p>
-      <span>Our</span> <span class="description-title">Vision & Mission</span>
-    </p>
-  </div>
-
-  <div class="container">
-    <div class="row gy-4 justify-content-center">
-      <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="bi bi-eye"></i>
-            <!-- Eye icon for Vision -->
-          </div>
-          <a class="stretched-link">
-            <h3>Vision</h3>
-          </a>
-          <p>Leading Engineering Solutions Powerhouse</p>
-        </div>
-      </div>
-
-      <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="bi bi-flag"></i>
-            <!-- Flag icon for Mission -->
-          </div>
-          <a class="stretched-link">
-            <h3>Mission</h3>
-          </a>
-          <ul class="mt-4 text-justify vision-mission-list">
-            <li>
-              Committed to pursuing excellent engineering expertise and service
-              maintenance.
-            </li>
-            <li>
-              We lead the industry in safety and environmentally friendly
-              execution of projects.
-            </li>
-            <li>
-              We engage the best professionals in their field of expertise.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> #}
-
-{# <section id="scope-of-work" class="services section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Services</h2>
-    <p><span>Scope Of</span> <span class="description-title">Work</span></p>
-  </div>
-
-  <div class="container">
-    <div class="row gy-4 justify-content-center">
-      {% for item in scope_of_work %}
-      <div
-        class="col-lg-4 col-md-6"
-        data-aos="fade-up"
-        data-aos-delay="{{ item.data_aos_delay }}"
-      >
-        <div class="service-item position-relative">
-          <div class="icon">
-            <i class="{{ item.icon }}"></i>
-          </div>
-          <a class="stretched-link">
-            <h3>{{ item.title }}</h3>
-          </a>
-          <p>{{ item.desc }}</p>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section> #}
-
 
 <section id="our-services" class="our-services section pb-0">
   <div class="container">
@@ -239,9 +91,12 @@
               {% endfor %}
             </ul>
           </div>
-
         </div>
-        <a class="our-services-btn mt-4 mt-lg-0 ms-0 ms-lg-3" href="services.html">Learn More</a>
+        <a
+          class="our-services-btn mt-4 mt-lg-0 ms-0 ms-lg-3"
+          href="services.html"
+          >Learn More</a
+        >
       </div>
     </div>
   </div>
@@ -301,131 +156,17 @@
   </div>
 </section>
 
-
-{# <section id="contact" class="contact section light-background">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p>
-      <span>Need Help?</span> <span class="description-title">Contact Us</span>
-    </p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4">
-      <div class="col-lg-5">
-        <div class="info-wrap">
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <i class="bi bi-geo-alt flex-shrink-0"></i>
-            <div>
-              <h3>Address</h3>
-              <p>
-                11-A, Jalan Tengku Ampuan Zabedah J 9/J Seksyen 9, 40100, Shah
-                Alam Selangor, Malaysia
-              </p>
-            </div>
-          </div>
-
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <i class="bi bi-telephone flex-shrink-0"></i>
-            <div>
-              <h3>Call Us</h3>
-              <p>011-1192 2507</p>
-            </div>
-          </div>
-
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <i class="bi bi-envelope flex-shrink-0"></i>
-            <div>
-              <h3>Email Us</h3>
-              <p>syazwan@rstenergy.com.my</p>
-            </div>
-          </div>
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5773.745496965095!2d101.52395607636433!3d3.083994353546823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4d87dc9022ff%3A0x59644c7f57aa2359!2s11a%2C%20Jalan%20Tengku%20Ampuan%20Zabedah%20J%209%2FJ%2C%20Seksyen%209%2C%2040100%20Shah%20Alam%2C%20Selangor!5e1!3m2!1sen!2smy!4v1729697388022!5m2!1sen!2smy"
-            style="border:0; width: 100%; height: 270px;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
-        </div>
-      </div>
-
-      <div class="col-lg-7">
-        <form
-          id="contact-form"
-          class="php-email-form"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <label for="name-field" class="pb-2">Your Name</label>
-              <input
-                type="text"
-                name="name"
-                id="name-field"
-                class="form-control"
-                required
-              />
-            </div>
-
-            <div class="col-md-6">
-              <label for="email-field" class="pb-2">Your Email</label>
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                id="email-field"
-                required
-              />
-            </div>
-
-            <div class="col-md-12">
-              <label for="subject-field" class="pb-2">Subject</label>
-              <input
-                type="text"
-                class="form-control"
-                name="subject"
-                id="subject-field"
-                required
-              />
-            </div>
-
-            <div class="col-md-12">
-              <label for="message-field" class="pb-2">Message</label>
-              <textarea
-                class="form-control"
-                name="message"
-                rows="10"
-                id="message-field"
-                required
-              ></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Your message has been sent. Thank you!
-              </div>
-
-              <button type="submit">Send Message</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section> #}
-
-
 <div id="sticky-bar" class="sticky-bar">
   <div class="container">
-    <div class="d-flex align-items-center justify-content-between flex-column flex-lg-row">
-      <h5 class="mb-0 text-white text-center text-md-start">LET'S WORK ON YOUR EXCITING NEW PROJECT TOGETHER!</h5>
-      <a href="contact.html" class="contact-us-btn mt-3 mt-lg-0">CONTACT US <i class="bi bi-chevron-right"></i></a>
+    <div
+      class="d-flex align-items-center justify-content-between flex-column flex-lg-row"
+    >
+      <h5 class="mb-0 text-white text-center text-md-start">
+        LET'S WORK ON YOUR EXCITING NEW PROJECT TOGETHER!
+      </h5>
+      <a href="contact.html" class="contact-us-btn mt-3 mt-lg-0"
+        >CONTACT US <i class="bi bi-chevron-right"></i
+      ></a>
     </div>
   </div>
 </div>
