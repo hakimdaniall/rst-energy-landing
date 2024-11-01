@@ -1,6 +1,6 @@
-<section id="hero" class="hero section pb-2">
+<section id="hero" class="hero section pb-3">
   <div class="container">
-    <div class="row gy-4">
+    <div class="row hero-item">
       <div
         class="col-lg-7 order-2 order-lg-1 d-flex flex-column justify-content-center mt-0"
         data-aos="zoom-out"
@@ -15,7 +15,9 @@
         class="col-lg-5 order-1 order-lg-2 d-flex flex-column justify-content-center mt-0"
         data-aos="zoom-out"
       >
-      <img src="https://placehold.co/500x500" alt="">
+      <div class="hero-img d-none d-lg-block">
+        <img src="{{ rootPath }}assets/images/hero-img-squared.jpeg" alt="">
+      </div>
       </div>
     </div>
   </div>
@@ -212,19 +214,19 @@
 </section> #}
 
 
-<section id="our-services" class="our-services section">
+<section id="our-services" class="our-services section pb-0">
   <div class="container">
     <div class="row gy-3">
       <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
         <img
-          src="https://placehold.co/500x400"
+          src="{{ rootPath }}assets/images/services-img-cropped.png"
           alt=""
           class="img-fluid"
         />
       </div>
 
       <div
-        class="col-lg-7 d-flex flex-column justify-content-center"
+        class="col-lg-7 d-flex flex-column justify-content-center position-relative"
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -238,8 +240,8 @@
             </ul>
           </div>
 
-          <a class="our-services-btn" href="services.html">Learn More</a>
         </div>
+        <a class="our-services-btn mt-4 mt-lg-0 ms-0 ms-lg-3" href="services.html">Learn More</a>
       </div>
     </div>
   </div>

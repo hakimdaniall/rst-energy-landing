@@ -205,6 +205,10 @@
   
   .header .logo {
     line-height: 1;
+    position: absolute;
+    left: 50%;
+    justify-content: center;
+    transform: translateX(-50%);
   }
   
   .header .logo img {
@@ -475,6 +479,7 @@
     font-size: 14px;
     padding-bottom: 50px;
     position: relative;
+    border-top: 1px solid #000;
   }
   
   .footer .footer-newsletter {
@@ -850,24 +855,32 @@
   --------------------------------------------------------------*/
   .hero {
     width: 100%;
-    min-height: 75vh;
     position: relative;
     padding: 0;
     display: flex;
     align-items: center;
-    // background: url("../images/hero-bg.jpg") top left;
-    // background-size: cover;
+  }
+
+  .hero-item {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 1200px) {
+    .hero-item {
+      align-items: center;     
+    }
   }
   
-  .hero:before {
-    content: "";
-    background: color-mix(in srgb, var(--background-color), transparent 30%);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
+  // .hero:before {
+  //   content: "";
+  //   background: color-mix(in srgb, var(--background-color), transparent 30%);
+  //   position: absolute;
+  //   bottom: 0;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  // }
   
   .hero .container {
     position: relative;
@@ -1108,7 +1121,7 @@
     list-style: none;
     padding: 0;
   }
-  
+
   .our-services .about-content ul li {
     display: flex;
     align-items: flex-start;
@@ -1159,16 +1172,27 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    bottom: 0;
+  }
+
+  @media (min-width: 1200px) {
+    .our-services .about-content h3 {
+      font-size: 48px;
+    }
+    .our-services .about-content ul li {
+      font-size: 27px;    
+    }
   }
 
   .about-content {
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    // flex-direction: column;
+    // flex-grow: 1;
+    justify-content: flex-start;
   }
   
   .services-list {
-    flex: 1;
+    // flex: 1;
   }
   /*--------------------------------------------------------------
   # Skills Section
@@ -1441,8 +1465,8 @@
   }
   
   @media (min-width: 992px) {
-    .testimonials .testimonial-item p {
-      width: 80%;
+    .our-services-btn {
+      position: absolute;
     }
   }
   
@@ -2124,13 +2148,41 @@
     color: #fff;
     flex-direction: column;
   }
-  .page-title-services h1 {
+  .page-title-services h1,
+  .services-banner h1 {
     color: #fff;
     font-size: 32px;
   }
 
+  .services-banner {
+    background: black;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
 @media (min-width: 992px) {
-  .page-title-services h1 {
+  .page-title-services h1,
+  .services-banner h1 {
     font-size: 70px;
+  }
+  .services-banner {
+    align-items: flex-end;
+    text-align: start;
+  }
+  .services-banner:before {
+    content: '';
+    background: url('./../../../assets/images/services-banner.png');
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
   }
 }
