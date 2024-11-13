@@ -8,20 +8,22 @@
     "build:cleanup": "node cleanup",
     "build:eleventy": "npx @11ty/eleventy",
     "build:rollup": "npx rollup ./src/assets/js/main.js --format iife --file ./dist/assets/js/main.js",
+    "build:scss": "sass ./src/assets/scss/styles.scss ./dist/assets/css/styles.css",
     "serve": "npx npm-run-all --parallel serve:*",
     "serve:eleventy": "npx @11ty/eleventy --serve",
-    "serve:rollup": "npx rollup ./src/assets/js/main.js --format iife --file ./dist/assets/js/main.js --watch"
+    "serve:rollup": "npx rollup ./src/assets/js/main.js --format iife --file ./dist/assets/js/main.js --watch",
+    "serve:scss": "sass --watch ./src/assets/scss/styles.scss:./dist/assets/css/styles.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^3.0.0",
     "npm-run-all": "^4.1.5",
-    "rollup": "^2.79.2"
+    "rollup": "^2.79.2",
+    "sass": "^1.80.7"
   },
   "dependencies": {
-    "eleventy-plugin-sass": "^1.2.0",
     "prettier": "^2.3.1",
     "prettier-plugin-twig-enhancements": "^1.0.1",
     "prettier-plugin-twig-melody": "^0.4.6",
