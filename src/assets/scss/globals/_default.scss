@@ -792,7 +792,7 @@
     content: "/";
     display: inline-block;
     padding-right: 10px;
-    color: color-mix(in srgb, var(--default-color), transparent 70%);
+    color: #fff;
   }
   
   /*--------------------------------------------------------------
@@ -902,20 +902,20 @@
     position: relative;
   }
 
-  .infos.section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 50%; /* Adjust this width to control how much of the image appears */
-    background-image: url('./../../assets/images/strike-info.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    // background-position: right;
-    opacity: 0.7; /* Optional: adjust opacity to make it less intense */
-    z-index: 1;
-  }
+  // .infos.section::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   width: 50%; /* Adjust this width to control how much of the image appears */
+  //   background-image: url('./../../assets/images/strike-info.png');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   // background-position: right;
+  //   opacity: 0.7; /* Optional: adjust opacity to make it less intense */
+  //   z-index: 1;
+  // }
   
   .green-text {
     color: var(--contrast-color);
@@ -2147,11 +2147,19 @@
     align-items: center;
     color: #fff;
     flex-direction: column;
+
+    &.about-us {
+      background: url('./../../../assets/images/about-us-banner.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
   .page-title-services h1,
   .services-banner h1 {
     color: #fff;
     font-size: 32px;
+    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
   }
 
   .services-banner {
@@ -2185,4 +2193,10 @@
     background-size: 100%;
     background-position: center;
   }
+}
+
+.carousel-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }

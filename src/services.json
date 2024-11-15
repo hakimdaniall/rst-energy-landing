@@ -3,31 +3,31 @@
         {
             "title": "Plant Maintenance & Turnaround ",
             "desc": "Our Plant Maintenance and Turnaround Services are designed to ensure that industrial facilities operate at peak efficiency, with minimal disruptions and maximum safety. These services are essential for sustaining long-term operational excellence and supporting the strategic goals of our clients.",
-            "img": "plant.jpg",
+            "img": "plant-maintenance.jpg",
             "icon": "bi bi-box-seam"
         },
         {
             "title": "Manpower Supply & General Trading",
             "desc": "Dual-service approach enhances operational efficiency and supports businesse. By offering a skilled workforce and efficient procurement of goods, we help clients enhance productivity, reduce costs, and achieve their project objectives effectively.",
-            "img": "manpower.jpg",
+            "img": "manpower-supply.jpg",
             "icon": "bi bi-person-badge" 
         },
         {
             "title": "Blasting and Painting",
             "desc": "Blasting and painting services are essential for the protection and longevity of industrial structures and equipment. Our skilled teams utilize advanced techniques and high-quality materials to deliver superior results, ensuring client satisfaction and operational excellence.",
-            "img": "equipment.jpg",
+            "img": "blasting-painting.jpg",
             "icon": "bi bi-tools" 
         },
         {
             "title": "Steel Structural Fabrication and Erection",
             "desc": "We provide comprehensive solutions for constructing robust and reliable steel structures. Our experienced teams utilize advanced techniques and adhere to the highest standards of quality and safety, ensuring successful project outcomes that meet the needs of our clients.",
-            "img": "equipment.jpg",
+            "img": "steel.jpg",
             "icon": "bi bi-tools" 
         },
         {
             "title": "Industrial Cleaning Services",
             "desc": "Industrial cleaning services for pressure vessels, tank, heat exchangers & etc are critical for maintaining operational efficiency, ensuring safety, and extending the lifespan of equipment. Our skilled teams utilize advanced cleaning techniques and adhere to strict safety and environmental standards",
-            "img": "equipment.jpg",
+            "img": "industrial-cleaning.jpeg",
             "icon": "bi bi-tools",
             "industrial_cleaning_services": [
                 {
@@ -51,13 +51,13 @@
         {
             "title": "Engineering Procurement Construction & Commissioning",
             "desc": "Our services provide a holistic approach to project delivery, integrating engineering, procurement, construction, and commissioning into a cohesive process. Our commitment to quality, safety, and client satisfaction ensures successful project outcomes and operational excellence.",
-            "img": "equipment.jpg",
+            "img": "engineering-construction.jpg",
             "icon": "bi bi-tools" 
         },
         {
             "title": "Civil & Mechanical Construction",
             "desc": "Our services encompass a wide range of activities, from site preparation and structural engineering to the installation of mechanical systems, ensuring that projects are completed efficiently and to the highest standards.",
-            "img": "equipment.jpg",
+            "img": "civil-mechanical.png",
             "icon": "bi bi-tools" 
         }
     ]
