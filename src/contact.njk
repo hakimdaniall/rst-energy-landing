@@ -53,7 +53,7 @@
             <i class="bi bi-envelope flex-shrink-0"></i>
             <div>
               <h3>Email Us</h3>
-              <p>syazwan@rstenergy.com.my</p>
+              <p>enquiry@rstenergy.com.my</p>
             </div>
           </div>
 
@@ -121,9 +121,9 @@
             </div>
 
             <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
+              <div class="loading" style="display: none;">Sending...</div>
+              <div class="error-message mt-2" style="display: none;"></div>
+              <div class="sent-message mt-2" style="display: none;">
                 Your message has been sent. Thank you!
               </div>
 
@@ -135,3 +135,44 @@
     </div>
   </div>
 </section>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("drrVevqWAQeQHpSU2"); // Replace with your EmailJS public key
+  })();
+</script>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+
+    // Show loading message or spinner
+    const loading = document.querySelector('.loading');
+    const error = document.querySelector('.error-message');
+    const success = document.querySelector('.sent-message');
+    loading.style.display = 'block';
+
+    emailjs.sendForm('service_fbs7t8l', 'template_mec3ral', this)
+      .then(() => {
+        // Hide loading spinner
+        loading.style.display = 'none';
+        // Show success message
+        success.style.display = 'block';
+        error.style.display = 'none';
+        setTimeout(() => {
+          success.style.display = 'none';
+        }, 3000);
+      }, (err) => {
+        // Hide loading spinner
+        loading.style.display = 'none';
+
+        // Show error message
+        error.textContent = 'Failed to send message. Please try again later.';
+        error.style.display = 'block';
+      });
+
+    // Reset the form after submission
+    this.reset();
+  });
+</script>
